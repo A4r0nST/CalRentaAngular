@@ -1,0 +1,45 @@
+
+<br>
+<label for="dep">DEPARTAMENTO :   </label>
+<select id="departamentos" class="form-control" [(ngModel)]="departamentos">
+  <option value="ventas">VENTAS</option>
+  <option value="contaduria">CONTADURIA</option>
+  <option value="it">IT</option>
+</select> 
+<br>
+<label for="dep">PRIMER NOMBRE</label>
+<input type="string" class="form-control" placeholder="PRIMER NOMBRE" id="prnombre" [(ngModel)]="prnombre">
+<br>
+<label for="dep">PRIMER APELLIDO</label>
+<input type="string" class="form-control" placeholder="PRIMER APELLIDO" id="prapellido" [(ngModel)]="prapellido">
+<br>
+<label for="dep">INGRESE SALARIO</label>
+<input type="number" class="form-control" placeholder="negrese el salario neto" id="salario" [(ngModel)]="sal">
+<br>
+
+
+<button class= "btn btn-primary" (click)="operacion()" >Calcular</button>
+<br>
+<br>
+<label class="form-control"> departamento: {{departamentos}} </label>
+<br>
+<label class="form-control"> Nombre del solicitante: {{prnombre}} {{prapellido}}</label>
+<br>
+<label class="form-control"> Descuento AFP ${{afp}}</label>
+<br>
+<label class="form-control"> Descuento (isss/Ipsfa/BinestarMaginesterial) ${{isssipsfabin}}</label>
+<br>
+<br>
+
+<label class="form-control"> DESCUENTO TOTAL: ${{rta}}</label>
+
+
+
+
+
+
+
+
+
+
+
